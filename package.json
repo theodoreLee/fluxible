@@ -1,12 +1,12 @@
 {
   "name": "fluxible-router",
-  "version": "0.4.8",
+  "version": "0.4.12-a",
   "description": "Routing for Fluxible applications",
   "main": "index.js",
   "private":true,
   "repository": {
     "type": "git",
-    "url": "git://github.com/yahoo/fluxible.git"
+    "url": "git@github.com:theodoreLee/fluxible.git"
   },
   "scripts": {
     "test": "mocha tests/unit/ --recursive --compilers js:babel/register --reporter spec",
