@@ -1,8 +1,0 @@
-artifacts
-docs
-tests
-.idea
-*.log
-.coveralls
-.npmignore
-.travis.yml

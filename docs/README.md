@@ -1,13 +1,9 @@
-# Docs
+# Fluxible Router Docs
 
-If you want to jump right into building your application, head over to our [Quick Start Guide](quick-start.md).
+ * [API Docs](api/README.md)
 
 If you want to look at example applications, check out our examples:
 
- - [Fluxible.io](https://github.com/yahoo/fluxible/blob/master/site) - Our very own documentation site written with Fluxible.
- - [Chat](https://github.com/yahoo/fluxible/blob/master/examples/chat) - Port of [Facebook's Flux chat example](https://github.com/facebook/flux/tree/master/examples/).
- - [Fluxible Router](https://github.com/yahoo/fluxible/blob/master/examples/fluxible-router) - Simple isomorphic routing in Flux flow.
- - [React Router](https://github.com/yahoo/fluxible/blob/master/examples/react-router) - Simple isomorphic routing with React router.
- - [TodoMVC](https://github.com/yahoo/fluxible/blob/master/examples/todo) - [TodoMVC](https://github.com/tastejs/todomvc) example using Fluxible.
- 
-Or check out some [community applications](community/reference-applications.md).
+ - [Fluxible.io](https://github.com/yahoo/fluxible/blob/master/site) - Our very own documentation site written with Fluxible and Fluxible Router.
+ - [Chat](https://github.com/yahoo/fluxible/tree/master/examples/chat) - Port of [Facebook's Flux chat example](https://github.com/facebook/flux/tree/master/examples/).
+ - [Fluxible Router](https://github.com/yahoo/fluxible/tree/master/examples/fluxible-router) - Simple isomorphic routing in Flux flow.
