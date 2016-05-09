@@ -1,5 +1,88 @@
 # Change Log
 
+## 1.0.0-alpha.4
+
+### Breaking Changes
+
+ * [#417] Updates to routr 2.0.0. `getRoute` will now `decodeURIComponent` route values, you might need to remove `decodeURIComponent` from your route actions if you were supporting extended characters manually in your routes.
+
+## 1.0.0-alpha.3
+
+### Bug Fixes
+
+ * [#414] Send correct payload to NAVIGATE_FAILURE
+ * [#413] Support query in navigateAction when not using full URL
+
+## 1.0.0-alpha.2
+
+### Bug Fixes
+
+ * [#412] Fixed style property in NavLink when inactive
+
+## 1.0.0-alpha.1
+
+### Breaking Changes
+
+See the [upgrade guide](UPGRADE.md#04x-to-1x)
+
+ * Default `activeClass` prop has been removed
+ * `route` object no longer contains `navigate` key. `navigate` can be accessed via `routeStore.getCurrentNavigate()`
+ * `NAVIGATE_SUCCESS` and `NAVIGATE_FAILURE` payloads are now the `navigate` object which contains a `route` key to
+ access the current route.
+
+### Features
+
+ * Performance improvements:
+ ** `NavLink` will only listen to the `RouteStore` if an `active*` property is used.
+ ** `NavLink` will no longer compute active state on all prop/state changes, only when `currentRoute` or `prop` has
+ changed.
+ * [#397] NavLink now supports query parameters via the `queryParams` property
+
+## 0.4.14
+
+### Bug Fixes
+
+ * [#427] Fallback for pushState and replaceState exceptions
+
+## 0.4.13
+
+### Features
+
+ * [#423] Added overridable `getDefaultChildProps` method to `NavLink` spec
+
+## 0.4.12
+
+### Bug Fixes
+
+ * [#421] Fix for scroll state in IE
+
+## 0.4.11
+
+### Features
+
+ * [#396] Add `navigate={true}` property that will check if a route matches before executing `navigateAction`. This
+ is useful if you are rendering a NavLink with an href that you are unsure of whether it is an internal or external
+ route. (thanks @hfter789)
+
+### Features
+
+## 0.4.10
+
+### Features
+
+ * [#390] Support for React 15
+ * [#394] Allow ignoring popstate event on page load
+
+### Bug Fixes
+
+ * [#392] Fix stopPropagation not working with modified key presses
+
+## 0.4.9
+
+### Features
+
+ * [#387] Allow `followLink` functionality to be modified by `createNavLinkComponent` spec argument
+
 ## 0.4.8
 
 ### Bug Fixes
@@ -71,7 +154,7 @@ Deprecated, published package was corrupted
 
  * Upgraded to React 0.14, breaking compatibility with older versions of React
  * Removed dependency on `Object.assign` library, must be polyfilled
- 
+
 ### Features
 
  * [#69] Add NavLink `activeElement` option to use another element type for active state

@@ -9,6 +9,7 @@ The `handleHistory` higher-order component handles the browser history state man
 | `checkRouteOnPageLoad` | `false` | Performs navigate on first page load |
 | `enableScroll` | `true` | Saves scroll position in history state |
 | `historyCreator` | [`History`](../../lib/History.js) | A factory for creating the history implementation |
+| `ignorePopstateOnPageLoad` | `false` | A boolean value or a function that returns a boolean value. [Browsers tend to handle the popstate event differently on page load. Chrome (prior to v34) and Safari always emit a popstate event on page load, but Firefox doesn't.](https://developer.mozilla.org/en-US/docs/Web/Events/popstate) This flag is for ignoring popstate event triggered on page load if that causes issue for your application, as reported in [issue #349](https://github.com/yahoo/fluxible/issues/349). |
 
 ## Example Usage
 
@@ -51,6 +52,17 @@ module.exports = AppComponent;
 ```
 
 ### Decorator Usage
+
+***Decorators are an evolving proposal and should be used with caution
+as the API may change at any point. Decorator support in
+fluxible-addons-react was built against Babel 5's implementation of
+decorators. As of Babel 6, support for decorators has been removed although
+third party transforms have been attempted with limited success.
+
+Decorators are also only proposed for classes and properties and therefore
+will not work with stateless functional components. See
+[decorator pattern](https://github.com/wycats/javascript-decorators) for
+more information on the proposal.***
 
 ```js
 // components/App.jsx
