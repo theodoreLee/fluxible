@@ -1,6 +1,6 @@
 {
   "name": "fluxible-router",
-  "version": "0.4.13",
+  "version": "1.0.0-alpha.4",
   "description": "Routing for Fluxible applications",
   "main": "index.js",
   "private":true,
@@ -13,7 +13,13 @@
     "cover": "istanbul cover --dir artifacts -- mocha tests/unit/ --recursive --compilers js:babel-register --reporter spec",
     "lint": "eslint *.js */*.js"
   },
-  "dependencies": {},
+  "dependencies": {
+    "debug": "^2.0.0",
+    "fluxible-addons-react": "^0.2.0",
+    "hoist-non-react-statics": "^1.0.4",
+    "inherits": "^2.0.1",
+    "routr": "^2.0.0"
+  },
   "devDependencies": {
     "async": "^1.4.2",
     "babel": "^6.5.2",
@@ -47,10 +53,6 @@
     "node": "4.x || 5.x || 6.x",
     "npm": "2.x || 3.x"
   },
-  "pre-commit": [
-    "lint",
-    "test"
-  ],
   "author": "Michael Ridgway <mridgway@yahoo-inc.com>",
   "license": "BSD-3-Clause"
 }
