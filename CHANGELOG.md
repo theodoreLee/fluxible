@@ -1,5 +1,11 @@
 # Change Log
 
+## 1.0.0-alpha.5
+
+### Bug Fixes
+
+ * [#453] Fix warnings for unknown props in React 15.2
+
 ## 1.0.0-alpha.4
 
 ### Breaking Changes
@@ -37,6 +43,18 @@ See the [upgrade guide](UPGRADE.md#04x-to-1x)
  ** `NavLink` will no longer compute active state on all prop/state changes, only when `currentRoute` or `prop` has
  changed.
  * [#397] NavLink now supports query parameters via the `queryParams` property
+
+## 0.4.16
+
+### Bug Fixes
+
+ * [#453] Fix warnings for unknown props in React 15.2
+ 
+## 0.4.15
+
+### New Feature
+
+ * [#450] add saveScrollInState param, by @Diokuz
 
 ## 0.4.14
 
